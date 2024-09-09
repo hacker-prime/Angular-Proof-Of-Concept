@@ -1,0 +1,800 @@
+
+    src/app/app.component.ts:10:13:
+      10 │ export class AppComponent {
+         ╵              ~~~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/home/home.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/home/home.component.ts:9:13:
+      9 │ export class HomeComponent {
+        ╵              ~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-form/salary-form.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-form/salary-form.component.ts:9:13:
+      9 │ export class SalaryFormComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-list/salary-list.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-list/salary-list.component.ts:9:13:
+      9 │ export class SalaryListComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+X [ERROR] TS2307: Cannot find module './salary-form/salary-form.component' or its corresponding type declarations. [plugin angular-compiler]       
+
+    src/app/salary/salary.module.ts:3:36:        
+      3 │ ...{ SalaryFormComponent } from './salary-form/salary-form.component';
+        ╵                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+X [ERROR] Could not resolve "./salary-form/salary-form.component"
+
+    src/app/salary/salary.module.ts:4:36:        
+      4 │ ...{ SalaryFormComponent } from './salary-form/salary-form.component';
+        ╵                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Application bundle generation failed. [0.111 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/app.component.ts:6:11:
+      6 │   imports: [RouterOutlet],
+        ╵            ~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/app.component.ts:10:13:
+      10 │ export class AppComponent {
+         ╵              ~~~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/home/home.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/home/home.component.ts:9:13:
+      9 │ export class HomeComponent {
+        ╵              ~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-form/salary-form.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-form/salary-form.component.ts:9:13:
+      9 │ export class SalaryFormComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-list/salary-list.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-list/salary-list.component.ts:9:13:
+      9 │ export class SalaryListComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng cache clean
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng serve -o
+Application bundle generation failed. [2.167 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/app.component.ts:6:11:
+      6 │   imports: [RouterOutlet],
+        ╵            ~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/app.component.ts:10:13:
+      10 │ export class AppComponent {
+         ╵              ~~~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/home/home.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/home/home.component.ts:9:13:
+      9 │ export class HomeComponent {
+        ╵              ~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-form/salary-form.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-form/salary-form.component.ts:9:13:
+      9 │ export class SalaryFormComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-list/salary-list.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-list/salary-list.component.ts:9:13:
+      9 │ export class SalaryListComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+Watch mode enabled. Watching for file changes...
+Application bundle generation failed. [0.239 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/home/home.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/home/home.component.ts:9:13:
+      9 │ export class HomeComponent {
+        ╵              ~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-form/salary-form.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-form/salary-form.component.ts:9:13:
+      9 │ export class SalaryFormComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-list/salary-list.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-list/salary-list.component.ts:9:13:
+      9 │ export class SalaryListComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+Application bundle generation failed. [0.165 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/app.component.ts:6:11:
+      6 │   imports: [RouterOutlet],
+        ╵            ~~~~~~~~~~~~~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/app.component.ts:10:13:
+      10 │ export class AppComponent {
+         ╵              ~~~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/home/home.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/home/home.component.ts:9:13:
+      9 │ export class HomeComponent {
+        ╵              ~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-form/salary-form.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-form/salary-form.component.ts:9:13:
+      9 │ export class SalaryFormComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-list/salary-list.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-list/salary-list.component.ts:9:13:
+      9 │ export class SalaryListComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+Application bundle generation failed. [0.128 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/home/home.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/home/home.component.ts:9:13:
+      9 │ export class HomeComponent {
+        ╵              ~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-form/salary-form.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-form/salary-form.component.ts:9:13:
+      9 │ export class SalaryFormComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-list/salary-list.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-list/salary-list.component.ts:9:13:
+      9 │ export class SalaryListComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+Application bundle generation failed. [0.155 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/home/home.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/home/home.component.ts:9:13:
+      9 │ export class HomeComponent {
+        ╵              ~~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-form/salary-form.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-form/salary-form.component.ts:9:13:
+      9 │ export class SalaryFormComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-list/salary-list.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-list/salary-list.component.ts:9:13:
+      9 │ export class SalaryListComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+Application bundle generation failed. [0.163 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-form/salary-form.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-form/salary-form.component.ts:9:13:
+      9 │ export class SalaryFormComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-list/salary-list.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-list/salary-list.component.ts:9:13:
+      9 │ export class SalaryListComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+Application bundle generation failed. [0.139 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+X [ERROR] TS-992010: 'imports' is only valid on a component that is standalone. [plugin angular-compiler]
+
+    src/app/salary-list/salary-list.component.ts:5:11:
+      5 │   imports: [],
+        ╵            ~~
+
+  Did you forget to add 'standalone: true' to this @Component?
+
+    src/app/salary-list/salary-list.component.ts:9:13:
+      9 │ export class SalaryListComponent {     
+        ╵              ~~~~~~~~~~~~~~~~~~~       
+
+
+Application bundle generation failed. [0.140 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:15:4:
+      15 │     HomeModule,        // Import feature modules
+         ╵     ~~~~~~~~~~
+
+
+X [ERROR] TS-996002: This import contains errors, which may affect components that depend on this NgModule. [plugin angular-compiler]
+
+    src/app/app.module.ts:16:4:
+      16 │     SalaryModule       // Import other feature modules
+         ╵     ~~~~~~~~~~~~
+
+
+
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ q
+bash: q: command not found
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng cache clean
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng serve -o
+Application bundle generation failed. [2.672 seconds]
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ngtypecheck.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+X [ERROR] TS6053: File 'C:/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app/src/main.server.ts' not found.
+  The file is in the program because:
+    Root file specified for compilation [plugin angular-compiler]
+
+
+Watch mode enabled. Watching for file changes... 
+
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng cache clean
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng serve -o
+Error: Schema validation failed with the following errors:
+  Data path "" must have required property 'browser'.
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng cache clean
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng serve -o
+Error: Schema validation failed with the following errors:
+  Data path "" must have required property 'browser'.
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng cache clean
+
+shayn@Hacker_Prime MINGW64 /c/xampp/htdocs/Sagicor/Angular-Proof-Of-Concept/salary-app (main)     
+$ ng serve -o
+Option "browserTarget" is deprecated: Use 'buildTarget' instead.
+✔ Browser application bundle generation complete.
+
+Initial chunk files   | Names         |  Raw size
+vendor.js             | vendor        |   2.88 MB | 
+polyfills.js          | polyfills     | 348.05 kB | 
+styles.css, styles.js | styles        | 232.59 kB | 
+main.js               | main          |  15.59 kB | 
+runtime.js            | runtime       |   6.67 kB | 
+
+                      | Initial total |   3.48 MB
+
+Build at: 2024-09-09T21:54:26.941Z - Hash: b2f456e8f2ac244c - Time: 19146ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+⠸ Generating browser application bundles (phase: emitting)...
+✔ Browser application bundle generation complete.
+
+
+
+5 unchanged chunks
+
+Build at: 2024-09-09T21:54:27.558Z - Hash: b2f456e8f2ac244c - Time: 454ms
+
+√ Compiled successfully.

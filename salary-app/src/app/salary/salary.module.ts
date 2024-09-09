@@ -15,3 +15,5 @@ import { SalaryListComponent } from '../salary-list/salary-list.component';
   ]
 })
 export class SalaryModule { }
+
+
