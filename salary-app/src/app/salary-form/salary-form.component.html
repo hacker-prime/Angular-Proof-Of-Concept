@@ -16,6 +16,6 @@
         <input type="number" formControlName="salary">
     </div>
 
-    <button type="submit">Submit</button>
+    <button type="submit" [disabled]="salaryForm.invalid">Submit</button>
 
  </form>
