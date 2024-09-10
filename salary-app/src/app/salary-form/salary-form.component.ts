@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-salary-form',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './salary-form.component.css'
 })
 export class SalaryFormComponent {
-
+  salaryForm: FormGroup = new FormGroup({});  
 }
