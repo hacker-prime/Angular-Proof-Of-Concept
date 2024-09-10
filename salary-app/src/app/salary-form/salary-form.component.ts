@@ -7,5 +7,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './salary-form.component.css'
 })
 export class SalaryFormComponent {
+
   salaryForm: FormGroup = new FormGroup({});  
+
+  onSubmit(){
+    
+  }
+
+
 }

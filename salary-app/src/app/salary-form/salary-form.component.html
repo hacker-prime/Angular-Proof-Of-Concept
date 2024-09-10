@@ -1,3 +1,21 @@
- <form [formGroup]="salaryForm">
+ <form [formGroup]="salaryForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label>Name:</label>
+        <input type="text" formControlName="name">
+    </div>
+
+
+    <div>
+        <label>Email:</label>
+        <input type="email" formControlName="email">
+    </div>
+
+    <div>
+        <label>Salary:</label>
+        <input type="number" formControlName="salary">
+    </div>
+
+    <button type="submit">Submit</button>
 
  </form>
