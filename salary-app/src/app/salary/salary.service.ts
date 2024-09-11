@@ -18,6 +18,7 @@ export class SalaryService {
 
   addSalary(Salary: Salary): void {
     this.salaries.push(Salary);
+    console.log(this.salaries);
   }  
 
   deleteSalary(id: string): void {

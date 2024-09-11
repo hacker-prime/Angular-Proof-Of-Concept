@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { SalaryService } from '../salary/salary.service';
+import { Salary } from '../models/salary';
 
 @Component({
   selector: 'app-salary-form',
@@ -10,7 +12,9 @@ export class SalaryFormComponent implements OnInit {
  
   salaryForm: FormGroup = new FormGroup({});  
 
-  constructor(private formBuilder: FormBuilder){
+  constructor(
+    private formBuilder: FormBuilder,
+    private salaryService: SalaryService){
 
   }
 
@@ -26,7 +30,9 @@ export class SalaryFormComponent implements OnInit {
 
   onSubmit(){
     if(this.salaryForm.valid){
-      console.log("valid")
+      // console.log("valid")
+      let salary: Salary = this.salaryForm.value;
+      this.salaryService.addSalary(salary) 
     }
   }
 
