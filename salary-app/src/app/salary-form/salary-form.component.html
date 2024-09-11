@@ -3,17 +3,26 @@
     <div>
         <label>Name:</label>
         <input type="text" formControlName="name">
+        <div *ngIf="salaryForm.get('name')?.invalid && salaryForm.get('name')?.touched">
+            Name is required.
+        </div>
     </div>
 
 
     <div>
         <label>Email:</label>
         <input type="email" formControlName="email">
+        <div *ngIf="salaryForm.get('email')?.invalid && salaryForm.get('email')?.touched">
+            Email is required.
+        </div>
     </div>
 
     <div>
         <label>Salary:</label>
         <input type="number" formControlName="salary">
+        <div *ngIf="salaryForm.get('number')?.invalid && salaryForm.get('number')?.touched">
+            Salary is required.
+        </div>
     </div>
 
     <button type="submit" [disabled]="salaryForm.invalid">Submit</button>
