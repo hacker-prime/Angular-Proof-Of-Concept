@@ -38,8 +38,8 @@ export class SalaryService {
     localStorage.setItem("salaries", JSON.stringify(this.salaries));
   } 
 
-  updateSalary(updatedSalary: Salary): void {
-    let index = this.salaries.findIndex(res => res.id === updatedSalary.id)
+  updateSalary(id: string, updatedSalary: Salary): void {
+    let index = this.salaries.findIndex(res => res.id === id)
     this.salaries[index] = updatedSalary;
     localStorage.setItem("salaries", JSON.stringify(this.salaries));
   }
