@@ -24,6 +24,9 @@ export class SalaryService {
   }
 
   addSalary(Salary: Salary): void {
+
+    Salary.id = Date.now().toString(); 
+
     this.salaries.push(Salary);
     console.log(this.salaries);
     localStorage.setItem("salaries", JSON.stringify(this.salaries));
