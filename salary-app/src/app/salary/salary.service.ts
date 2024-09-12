@@ -20,7 +20,7 @@ export class SalaryService {
   }
 
   getSalary(id: string): Salary | undefined {
-    return this.salaries.find(res => res.id === id);
+    return this.salaries.find(sal => sal.id === id);
   }
 
   addSalary(Salary: Salary): void {
@@ -33,16 +33,19 @@ export class SalaryService {
   }  
 
   deleteSalary(id: string): void {
-    let index = this.salaries.findIndex(res => res.id === id);
+    let index = this.salaries.findIndex(sal => sal.id === id);
     this.salaries.splice(index,1)
     localStorage.setItem("salaries", JSON.stringify(this.salaries));
   } 
 
   updateSalary(id: string, updatedSalary: Salary): void {
-    let index = this.salaries.findIndex(res => res.id === id)
+    let index = this.salaries.findIndex(sal => sal.id === id)
+    updatedSalary.id = id;
     this.salaries[index] = updatedSalary;
     localStorage.setItem("salaries", JSON.stringify(this.salaries));
   }
+
+  
 
 
 
