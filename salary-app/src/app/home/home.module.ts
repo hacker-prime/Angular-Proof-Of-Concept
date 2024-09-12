@@ -7,6 +7,8 @@ import { RouterModule } from '@angular/router';
   declarations: [HomeComponent],  // Declare the HomeComponent here
   imports: [CommonModule,
             RouterModule
+  ], exports: [ // Allow other modules to use this component // The home module is declaring the home component
+    HomeComponent
   ]
 })
 export class HomeModule { }
