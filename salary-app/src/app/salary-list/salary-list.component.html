@@ -1,1 +1,9 @@
-<p>salary-list works!</p>
+<h2>Salary List</h2>
+
+<ul>
+    <li *ngFor="let salary of salaries">
+        Name: {{salary.name}} <br>
+        Email: {{salary.email}} <br>
+        Salary: {{salary.salary}} <br>
+    </li>
+</ul>
