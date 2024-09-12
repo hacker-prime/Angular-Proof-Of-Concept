@@ -7,7 +7,8 @@ import { SalaryFormComponent } from './salary-form/salary-form.component';
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Default route (home page)
   { path: 'list', component: SalaryListComponent }, // Salary list
-  { path: 'new', component: SalaryFormComponent }   // Salary form
+  { path: 'new', component: SalaryFormComponent },   // Salary form
+  { path: 'edit/:id', component: SalaryFormComponent}
 ];
 
 @NgModule({

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SalaryFormComponent } from '../salary-form/salary-form.component';
 import { SalaryListComponent } from '../salary-list/salary-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ]
 })
 export class SalaryModule { }

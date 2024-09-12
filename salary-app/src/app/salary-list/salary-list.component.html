@@ -6,6 +6,7 @@
         Email: {{salary.email}} <br>
         Salary: {{salary.salary}} <br>
         <button (click)="deleteSalary(salary.id)">Delete</button>
+        <button [routerLink]="['/edit', salary.id]">Edit</button>
     </li>
 </ul>
 
