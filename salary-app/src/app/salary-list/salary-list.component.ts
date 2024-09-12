@@ -21,6 +21,11 @@ export class SalaryListComponent implements OnInit {
 
   }
 
+  deleteSalary(id: string){
+    // The component calls the service method (salary) to delete something
+    this.salaryService.deleteSalary(id);
+
+  }  
 
 
 }
